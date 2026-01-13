@@ -53,4 +53,4 @@ def download():
 
 @app.route("/")
 def home():
-    return "Audio Fetch Tool is running"
+    return render_template("index.html")
