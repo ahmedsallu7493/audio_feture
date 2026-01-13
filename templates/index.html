@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Audio Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            width: 350px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 8px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #00c853;
+            color: #000;
+            cursor: pointer;
+        }
+        audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .msg {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h3>YouTube → MP3</h3>
+
+    <input type="text" id="url" placeholder="Paste YouTube URL">
+    <button onclick="download()">Fetch Audio</button>
+
+    <audio id="player" controls></audio>
+
+    <div class="msg" id="msg"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
